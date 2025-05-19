@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>976</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>976</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDosya">
+    <property name="title">
+     <string>Dosya</string>
+    </property>
+    <addaction name="actionYeni"/>
+    <addaction name="actionA"/>
+    <addaction name="actionKaydet"/>
+    <addaction name="actionFarkl_Kaydet"/>
+    <addaction name="separator"/>
+    <addaction name="actionPDF_D_a_AKtar"/>
+    <addaction name="separator"/>
+    <addaction name="action_k"/>
+   </widget>
+   <widget class="QMenu" name="menuD_zenle">
+    <property name="title">
+     <string>Düzenle</string>
+    </property>
+    <addaction name="actionKopyala"/>
+    <addaction name="actionYap_t_r"/>
+    <addaction name="actionKes"/>
+    <addaction name="separator"/>
+    <addaction name="actionGeri_AL"/>
+    <addaction name="action_leri_Sar"/>
+   </widget>
+   <widget class="QMenu" name="menuBi_imlendir">
+    <property name="title">
+     <string>Biçimlendir</string>
+    </property>
+    <addaction name="actionFont"/>
+    <addaction name="actionColor"/>
+   </widget>
+   <widget class="QMenu" name="menuStil">
+    <property name="title">
+     <string>Stil</string>
+    </property>
+    <addaction name="actionKal_n"/>
+    <addaction name="action_talik"/>
+    <addaction name="actionAlt_izili"/>
+    <addaction name="separator"/>
+    <addaction name="actionSola_Yasla"/>
+    <addaction name="actionSa_a_Yasla"/>
+    <addaction name="actionOrtala"/>
+    <addaction name="action_ki_Yana_Yasl"/>
+   </widget>
+   <addaction name="menuDosya"/>
+   <addaction name="menuD_zenle"/>
+   <addaction name="menuBi_imlendir"/>
+   <addaction name="menuStil"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actionYeni"/>
+   <addaction name="actionA"/>
+   <addaction name="actionKaydet"/>
+   <addaction name="actionFarkl_Kaydet"/>
+   <addaction name="actionPDF_D_a_AKtar"/>
+   <addaction name="separator"/>
+   <addaction name="actionKopyala"/>
+   <addaction name="actionYap_t_r"/>
+   <addaction name="actionKes"/>
+   <addaction name="actionGeri_AL"/>
+   <addaction name="action_leri_Sar"/>
+   <addaction name="separator"/>
+   <addaction name="actionFont"/>
+   <addaction name="actionColor"/>
+   <addaction name="separator"/>
+   <addaction name="actionKal_n"/>
+   <addaction name="action_talik"/>
+   <addaction name="actionAlt_izili"/>
+   <addaction name="separator"/>
+   <addaction name="actionSola_Yasla"/>
+   <addaction name="actionOrtala"/>
+   <addaction name="actionSa_a_Yasla"/>
+   <addaction name="action_ki_Yana_Yasl"/>
+  </widget>
+  <action name="actionYeni">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/new.png</normaloff>:/image/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Yeni</string>
+   </property>
+  </action>
+  <action name="actionA">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/open.png</normaloff>:/image/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Aç</string>
+   </property>
+  </action>
+  <action name="actionKaydet">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/save.png</normaloff>:/image/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kaydet</string>
+   </property>
+  </action>
+  <action name="actionFarkl_Kaydet">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/save-as.png</normaloff>:/image/save-as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Farklı Kaydet</string>
+   </property>
+  </action>
+  <action name="actionYazd_r">
+   <property name="text">
+    <string>Yazdır</string>
+   </property>
+  </action>
+  <action name="actionYazd_rma_G_r_n_m">
+   <property name="text">
+    <string>Yazdırma Görünümü</string>
+   </property>
+  </action>
+  <action name="actionPDF_D_a_AKtar">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/pdf.png</normaloff>:/image/pdf.png</iconset>
+   </property>
+   <property name="text">
+    <string>PDF olarak Dışa Aktar</string>
+   </property>
+  </action>
+  <action name="action_k">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/exit.png</normaloff>:/image/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+  </action>
+  <action name="actionKopyala">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/copy.png</normaloff>:/image/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kopyala</string>
+   </property>
+  </action>
+  <action name="actionKes">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/cut.png</normaloff>:/image/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kes</string>
+   </property>
+  </action>
+  <action name="actionYap_t_r">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/paste.png</normaloff>:/image/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Yapıştır</string>
+   </property>
+  </action>
+  <action name="actionGeri_AL">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/undo.png</normaloff>:/image/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Geri Al</string>
+   </property>
+  </action>
+  <action name="action_leri_Sar">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/redo.png</normaloff>:/image/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>İleri Sar</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/font.png</normaloff>:/image/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/color.png</normaloff>:/image/color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionKal_n">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/bold.png</normaloff>:/image/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Kalın</string>
+   </property>
+  </action>
+  <action name="action_talik">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/italic.png</normaloff>:/image/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>İtalik</string>
+   </property>
+  </action>
+  <action name="actionAlt_izili">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/underline.png</normaloff>:/image/underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>Altı Çizili</string>
+   </property>
+  </action>
+  <action name="actionSola_Yasla">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/left.png</normaloff>:/image/left.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sola Hizala</string>
+   </property>
+  </action>
+  <action name="actionSa_a_Yasla">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/right.png</normaloff>:/image/right.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sağa Hizala</string>
+   </property>
+  </action>
+  <action name="actionOrtala">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/center.png</normaloff>:/image/center.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ortala</string>
+   </property>
+  </action>
+  <action name="action_ki_Yana_Yasl">
+   <property name="icon">
+    <iconset resource="Resources/Resources.qrc">
+     <normaloff>:/image/justify.png</normaloff>:/image/justify.png</iconset>
+   </property>
+   <property name="text">
+    <string>Yasla</string>
+   </property>
+  </action>
+  <action name="actionSaat">
+   <property name="text">
+    <string>Saat</string>
+   </property>
+  </action>
+  <action name="actionTarih">
+   <property name="text">
+    <string>Tarih</string>
+   </property>
+  </action>
+  <action name="actionMetin_Vurgula">
+   <property name="text">
+    <string>Metin Vurgula</string>
+   </property>
+  </action>
+  <action name="actionHakk_nda">
+   <property name="text">
+    <string>Hakkında</string>
+   </property>
+  </action>
+  <action name="actionQt_Hakk_nda">
+   <property name="text">
+    <string>Qt Hakkında</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
